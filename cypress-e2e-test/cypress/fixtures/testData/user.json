@@ -1,0 +1,10 @@
+{
+  "regular": {
+    "name": "e2etest@163.com",
+    "password": "12345678"
+  },
+  "manager": {
+    "name": "e2etest@163.com",
+    "password": "12345677"
+  }
+}

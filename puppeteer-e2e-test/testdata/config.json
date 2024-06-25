@@ -1,0 +1,19 @@
+{
+  "active": "dev",
+  "dev": {
+    "baseUrl": "http://www.dev.com",
+    "db": {
+      "host": "localhost",
+      "username": "root",
+      "password": "root123456"
+    }
+  },
+  "st": {
+    "baseUrl": "http://www.st.com",
+    "db": {
+      "host": "localhost",
+      "username": "root",
+      "password": "root123456"
+    }
+  }
+}

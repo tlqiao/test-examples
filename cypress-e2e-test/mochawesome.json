@@ -1,0 +1,167 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2019-11-26T09:10:41.887Z",
+    "end": "2019-11-26T09:10:41.887Z",
+    "duration": 49672,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1a1786fb-197d-47eb-843f-1d7e3fe332d7",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ef52b7d9-2d87-4fc8-acb0-59eb1b0bb46c",
+          "title": "practice assert element content",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "assert it",
+              "fullTitle": "practice assert element content assert it",
+              "timedOut": null,
+              "duration": 30316,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://angular.realworld.io\");\ncy.get('app-layout-header ul li a').eq(0).should('contain', 'Home');\ncy.get('app-layout-header ul li a').eq(1).should('contain', 'Sign in');\ncy.get('app-layout-header ul li a').eq(2).should('contain', 'Sign up');\ncy.get('app-layout-header ul li a[href=\"/login\"]').click();\ncy.get('[formcontrolname=email]').clear();\ncy.get('[formcontrolname=email]').type(\"e2etest@163.com\");\ncy.get('[formcontrolname=password]').clear();\ncy.get('[formcontrolname=password]').type(\"12345678\");\ncy.get('app-auth-page button[type=\"submit\"]').click();\ncy.get('app-layout-header ul li a').should('have.length', 4);\ncy.get('app-layout-header ul li a').eq(0).should('contain', 'Home');\ncy.get('app-layout-header ul li a').eq(1).should('contain', 'New Article');\ncy.get('app-layout-header ul li a').eq(2).should('contain', 'Settings');\ncy.get('app-layout-header ul li a').eq(3).should('contain', 'e2etest');\ncy.get('app-home-page li a').contains('Your Feed').should('have.class', 'active');\ncy.get('app-layout-header ul li a').contains('Sign in').should('not.exist');\ncy.get('app-layout-header ul li a').contains('Sign up').should('not.exist');\ncy.get('app-layout-header ul li a').contains('Settings').click();\ncy.get('app-settings-page h1').should('contain', 'Your Settings');\ncy.get('app-settings-page button[class=\"btn btn-outline-danger\"]').click();\ncy.get('app-home-page li a').contains('Global Feed').should('have.class', 'active');\ncy.get('app-layout-header ul li a').should('have.length', 3);\ncy.get('app-layout-header ul li a').contains('Home').should('exist');\ncy.get('app-layout-header ul li a').contains('Sign in').should('exist');\ncy.get('app-layout-header ul li a').contains('Sign up').should('exist');",
+              "err": {},
+              "uuid": "ce547cfa-886a-4d33-b30f-737d5ba6b7a8",
+              "parentUUID": "ef52b7d9-2d87-4fc8-acb0-59eb1b0bb46c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ce547cfa-886a-4d33-b30f-737d5ba6b7a8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 30316,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "5c7d8fd9-3c88-4fd2-9ab3-423f5c7aa7a0",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c2840176-d866-4b51-adc3-47bf25914ba7",
+          "title": "debug demo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "debug demo",
+              "fullTitle": "debug demo debug demo",
+              "timedOut": null,
+              "duration": 19356,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://angular.realworld.io\");\ncy.get('app-layout-header ul li a[href=\"/logins\"]').click();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: 'app-layout-header ul li a[href=\"/logins\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'app-layout-header ul li a[href=\"/logins\"]', but never found it.\n    at Object.cypressErr (https://angular.realworld.io/__cypress/runner/cypress_runner.js:85348:11)\n    at Object.throwErr (https://angular.realworld.io/__cypress/runner/cypress_runner.js:85303:18)\n    at Object.throwErrByPath (https://angular.realworld.io/__cypress/runner/cypress_runner.js:85335:17)\n    at retry (https://angular.realworld.io/__cypress/runner/cypress_runner.js:77321:16)\n    at onFailFn (https://angular.realworld.io/__cypress/runner/cypress_runner.js:68422:16)\n    at tryCatcher (https://angular.realworld.io/__cypress/runner/cypress_runner.js:118962:23)\n    at Promise._settlePromiseFromHandler (https://angular.realworld.io/__cypress/runner/cypress_runner.js:116898:31)\n    at Promise._settlePromise (https://angular.realworld.io/__cypress/runner/cypress_runner.js:116955:18)\n    at Promise._settlePromise0 (https://angular.realworld.io/__cypress/runner/cypress_runner.js:117000:10)\n    at Promise._settlePromises (https://angular.realworld.io/__cypress/runner/cypress_runner.js:117075:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://angular.realworld.io/__cypress/runner/cypress_runner.js:113687:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://angular.realworld.io/__cypress/runner/cypress_runner.js:113697:10)\n    at Async.drainQueues (https://angular.realworld.io/__cypress/runner/cypress_runner.js:113571:14)\n    at <anonymous>",
+                "diff": null
+              },
+              "uuid": "748c96d0-83da-488c-ba4c-6928391681e6",
+              "parentUUID": "c2840176-d866-4b51-adc3-47bf25914ba7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "748c96d0-83da-488c-ba4c-6928391681e6"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 19356,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.2.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.0.1"
+    }
+  }
+}

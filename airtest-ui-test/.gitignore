@@ -1,0 +1,5 @@
+.pytest_cache
+assets/
+venv/
+.idea
+.DS_Store

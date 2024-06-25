@@ -1,0 +1,48 @@
+{
+  "name": "testcafe-e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "version": "testcafe -v",
+    "browsers": "testcafe -b",
+    "test:login": "testcafe chrome:headless e2e/scenario/basic/login_spec.js",
+    "test:loginLive": "testcafe-live chrome e2e/scenario/basic/login_spec.js",
+    "test:loginLive2": "testcafe chrome e2e/scenario/basic/login_spec.js -L",
+    "test:firefox": "testcafe firefox e2e/scenario/basic/login_spec.js",
+    "test:safari": "testcafe safari e2e/scenario/basic/login_spec.js",
+    "test:selectElement": "testcafe chrome e2e/scenario/action/select_element_spec.js",
+    "test:dragElement": "testcafe chrome e2e/scenario/action/drag_element_spec.js",
+    "test:keyBoard": "testcafe chrome e2e/scenario/action/keyboard_spec.js",
+    "test:uploadFile": "testcafe chrome e2e/scenario/action/uploadFile_spec.js",
+    "test:downloadFile": "testcafe chrome e2e/scenario/action/downloadFile_spec.js -L",
+    "test:iframeTest": "testcafe chrome e2e/scenario/action/iframeElement_spec.js",
+    "test:shadowDomTest": "testcafe chrome e2e/scenario/action/shadowDom_spec.js",
+    "test:handleDialog": "testcafe chrome e2e/scenario/action/handleDialog_spec.js",
+    "test:handleDialogTwo": "testcafe chrome e2e/scenario/action/handleDialogTwo_spec.js",
+    "test:hoverTest": "testcafe chrome e2e/scenario/action/hover_spec.js",
+    "test:pageBackForward": "testcafe chrome e2e/scenario/action/pageBackForward_spec.js",
+    "test:debug": "testcafe --inspect-brk chrome e2e/scenario/debug/debug_spec.js",
+    "test:loginWithDBData": "testcafe chrome e2e/scenario/db/loginWithDBUser_spec.js -L",
+    "test:favoriateBlog": "testcafe chrome e2e/scenario/demo/feature/case/blogManage/favoriateBlog_spec.js",
+    "test:failedCase": "testcafe chrome e2e/scenario/retry/loginFailed_spec.js",
+    "test:getConfigsTwo": "node  e2e/scenario/demo/config/configManage.js",
+    "test": "testcafe chrome e2e/scenario/basic/*_spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "express": "^4.18.1",
+    "mocha": "^10.0.0",
+    "mysql": "^2.18.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5",
+    "testcafe": "^1.8.4",
+    "testcafe-live": "^0.1.4",
+    "testcafe-reporter-html": "^1.4.5"
+  },
+  "devDependencies": {
+    "supertest": "^6.2.3"
+  }
+}

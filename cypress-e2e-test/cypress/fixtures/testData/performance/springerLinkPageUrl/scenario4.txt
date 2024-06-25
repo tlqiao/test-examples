@@ -1,0 +1,4 @@
+https://link.springer.com/chapter/10.1007/978-3-030-82420-4_4
+https://order.springer.com/public/login
+https://order.springer.com/public/verify#sprcom-login-form
+https://order-payment.springer.com/payment?referenceToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWZlcmVuY2VDb2RlIjoiUFJGLVA1Ni1YREIifQ.yI0cXxgbUfoPKiniTRRUL3GLpgNW8RNn8j0uSBZ_mDE&_locale=en

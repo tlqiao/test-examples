@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite name="TestCafe Tests: Chrome 81.0.4044.138 / macOS 10.15.3" tests="3" failures="0" skipped="0" errors="0" time="48.948" timestamp="Thu, 21 May 2020 11:31:34 GMT" >
+  <testcase classname="login web application" name="should login successfully" time="25.358">
+  </testcase>
+  <testcase classname="login web application" name="should login with page object successfully" time="28.326">
+  </testcase>
+  <testcase classname="publish new article test" name="should publish new article test" time="48.379">
+  </testcase>
+</testsuite>

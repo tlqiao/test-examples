@@ -1,0 +1,4 @@
+platform: Android
+android:
+  app_name: com.chinamworld.bocmbci
+  device: 35816d9c

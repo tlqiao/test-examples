@@ -1,0 +1,19 @@
+ "filter": {
+    "testMeta": {
+      "device": "web",
+      "env": "prd"
+    },
+    "fixtureMeta": {
+      "device": "web",
+      "env": "prd"
+    }
+  },
+   "debugOnFail": true,
+     "debugMode": true,
+     "concurrency": 3,
+      "browser": "firefox",
+
+        "reporter": {
+          "name": "html",
+          "output": "reports/report.html"
+        }

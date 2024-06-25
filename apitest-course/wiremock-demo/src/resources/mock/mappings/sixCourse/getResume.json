@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/api/getResume"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "sexCourse/resume.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8"
+    }
+  }
+}

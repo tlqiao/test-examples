@@ -1,0 +1,25 @@
+{
+  "active": "dev",
+  "dev": {
+    "env": "dev",
+    "appBaseUrl": "https://angular.realworld.io/",
+    "apiBaseUrl": "https://conduit.productionready.io/",
+    "db": {
+      "host": "localhost",
+      "username": "root",
+      "password": "root123456"
+    },
+    "dataBasePath": "./scenario/example/testdata/dataFile/"
+  },
+  "st": {
+    "env": "st",
+    "appBaseUrl": "https://angular.realworld.io/",
+    "apiBaseUrl": "https://conduit.productionready.io/",
+    "db": {
+      "host": "localhost",
+      "username": "root",
+      "password": "root123456"
+    },
+    "dataBasePath": "./scenario/example/testdata/dataFile/"
+  }
+}

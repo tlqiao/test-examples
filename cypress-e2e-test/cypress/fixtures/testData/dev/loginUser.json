@@ -1,0 +1,12 @@
+{
+  "regular": {
+    "username": "e2etest",
+    "email": "e2etest@163.com",
+    "password": "C4xAhY/0Dv8noBcZRtE8Mg=="
+  },
+  "manager": {
+    "username": "abc",
+    "email": "abc@163.com",
+    "password": "abc....."
+  }
+}

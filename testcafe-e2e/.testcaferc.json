@@ -1,0 +1,12 @@
+{
+  "skipUncaughtErrors": false,
+  "skipJsErrors": true,
+  "selectorTimeout": 6000,
+  "assertionTimeout": 6000,
+  "pageLoadTimeout": 6000,
+  "speed": 1,
+  "quarantineMode": false,
+  "screenshots": {
+    "takeOnFails": true
+  }
+}

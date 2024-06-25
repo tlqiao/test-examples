@@ -1,0 +1,42 @@
+{"chromeWebSecurity":false,
+  "defaultCommandTimeOut": 20000,
+  "viewportHeight": 1080,
+  "viewportWidth": 1920,
+  "uncaught:exception": false,
+  "video": false,
+  "screenshotOnRunFailure": false,
+  "testFiles": "**/*_spec.js",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter.json"
+  },
+  "env": {
+    "appEnv": "dev",
+    "baseUrl": {
+      "dev": "https://angular.realworld.io",
+      "st": "https://angular-st.realworld.io"
+    },
+    "configs": {
+      "dev": {
+        "baseUrl": "https://angular.realworld.io",
+        "apiUrl": "https://conduit.productionready.io",
+        "mysql": {
+          "host": "localhost",
+          "user": "root",
+          "password": "root123456",
+          "dataBase": "test"
+        },
+        "st": {
+          "baseUrl": "https://angular-st.realworld.io",
+          "apiUrl": "https://conduit.productionready.io",
+          "mysql": {
+            "host": "localhost",
+            "user": "root",
+            "password": "root123456",
+            "dataBase": "test"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+roleName,userName,password
+systemManager,system,abc123
+userManager,user,abc123
+roleManager,role,abc123

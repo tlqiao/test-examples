@@ -1,0 +1,14 @@
+platform: Android
+android:
+  package_name: Android-NativeDemoApp-0.4.0.apk
+  app_name: com.wdiodemoapp
+  device: emulator-5554
+ios:
+  package_name: iOS-Simulator-NativeDemoApp-0.4.0.app.zip
+  app_name: com.wdiodemoapp
+  device: emulator-555
+#android:
+#  package_name: app-debug-androidTest.apk
+#  app_name: com.example.android.testing.espresso.DataAdapterSample.test
+#  device: 35816d9c
+

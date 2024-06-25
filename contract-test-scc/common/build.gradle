@@ -1,0 +1,47 @@
+buildscript {
+	repositories {
+		mavenCentral()
+		mavenLocal()
+		maven { url "https://repo.spring.io/snapshot" }
+		maven { url "https://repo.spring.io/milestone" }
+		maven { url "https://repo.spring.io/release" }
+	}
+}
+
+println "Cloud version [${findProperty('BOM_VERSION') ?: verifierVersion}]"
+
+group = 'com.example'
+version = '0.0.1.BUILD-SNAPSHOT'
+
+repositories {
+	mavenCentral()
+	mavenLocal()
+	maven { url "https://repo.spring.io/snapshot" }
+	maven { url "https://repo.spring.io/milestone" }
+	maven { url "https://repo.spring.io/release" }
+}
+
+apply plugin: 'maven-publish'
+apply plugin: 'java-library'
+
+dependencies {
+  implementation(platform("org.springframework.cloud:spring-cloud-dependencies:${project.findProperty('BOM_VERSION') ?: BOM_VERSION}"))
+}
+
+dependencies {
+	implementation("org.springframework.cloud:spring-cloud-contract-spec")
+}
+
+test {
+	testLogging {
+		exceptionFormat = 'full'
+	}
+}
+
+publishing {
+	publications {
+		mavenJava(MavenPublication) {
+			from components.java
+		}
+	}
+}

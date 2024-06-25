@@ -1,0 +1,42 @@
+{
+  "name": "com.github",
+  "version": "1.0.0",
+  "description": "this is a test",
+  "main": "index.js",
+  "scripts": {
+    "cypressOpen": "cypress open",
+    "cypressDebug": "DEBUG=cypress:* cypress open ",
+    "basicCase": "cypress run --spec 'cypress/integration/e2e/basic/*_spec.js'",
+    "autoWaitDemo": "cypress run --spec 'cypress/integration/e2e/basic/autoWaitDemo_spec.js' ",
+    "loginDemo": "cypress run --browser='chrome' --spec 'cypress/integration/e2e/basic/autoWaitDemo_spec.js'",
+    "debugDemo": "cypress debug --spec 'cypress/integration/e2e/debug/debugDemo_spec.js' ",
+    "assertDemo": "cypress run --spec 'cypress/integration/e2e/assertion/assertDemo_spec.js' ",
+    "assertPractice": "cypress run --spec 'cypress/integration/e2e/assertion/assertPractice_spec.js' ",
+    "test": "node ./cypress/integration/e2e/assertion/threeStyleAssert.js",
+    "select-db-data": "node cypress/integration/e2e/db/select-db-data.js",
+    "control-mysql-db": "cypress run --spec 'cypress/integration/e2e/db/controlMysqlWithTask_spec.js' ",
+    "uploadFile": "cypress run --spec 'cypress/integration/e2e/action/uploadFile_spec.js'",
+    "getToken": "node cypress/integration/e2e/demo/testData/prepareBlogTestData.js",
+    "addComment": "cypress run --headless --spec 'cypress/integration/e2e/demo/scenario/case/addBlogComment_spec.js'",
+    "blogManageTestSuite": "cypress run --spec 'cypress/integration/e2e/demo/scenario/case/*_spec.js' ",
+    "failedRetry": "export CYPRESS_RETRIES=2 && cypress run --headed --spec 'cypress/integration/e2e/retry/failedRetry_spec.js' ",
+    "hoverTest": "cypress run --spec 'cypress/integration/e2e/action/hover_spec.js' "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "crypto-js": "^3.1.9-1",
+    "cypress": "^4.5.0",
+    "cypress-file-upload": "4.0.6",
+    "cypress-multi-reporters": "^1.2.1",
+    "cypress-plugin-retries": "^1.5.2",
+    "cypress-shadow-dom": "^1.3.0",
+    "mocha": "^6.2.2",
+    "mochawesome": "^4.1.0",
+    "mochawesome-merge": "^2.1.0",
+    "mochawesome-report-generator": "^4.0.1",
+    "mysql": "^2.18.1",
+    "run-func": "^1.0.5"
+  }
+}
