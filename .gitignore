@@ -7,3 +7,6 @@ package-lock.json
 # IDEs
 /.idea
 *.iml
+**/node_modules/
+**/.idea
+**/build
