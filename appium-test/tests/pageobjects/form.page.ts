@@ -22,7 +22,6 @@ class FormPage extends Page {
         }
         await this.submitButton.click();
     }
-
     /**
      * define or overwrite page methods
      */
